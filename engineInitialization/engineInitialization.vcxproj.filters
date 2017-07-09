@@ -1,25 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Mainloop">
+      <UniqueIdentifier>{dd02f0b8-5b7b-4c57-b37f-d407ebf6d73c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="test2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="GameCodeStd.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="test2.cpp" />
+    <ClCompile Include="Mainloop\Initialization.cpp" />
+    <ClCompile Include="BaseGameCode\BaseGameCode.cpp" />
+    <ClCompile Include="BaseGameCode\BaseGameLogic.cpp" />
+    <ClCompile Include="BaseGameCode\BaseGameCode4.cpp" />
+    <ClCompile Include="Mainloop\Process.cpp" />
+    <ClCompile Include="Mainloop\ProcessManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameCodeStd.h" />
+    <ClInclude Include="BaseGameCode\interfaces.h" />
+    <ClInclude Include="Mainloop\Initialization.h" />
+    <ClInclude Include="BaseGameCode\BaseGameCode.h" />
+    <ClInclude Include="BaseGameCode\BaseGameLogic.h" />
+    <ClInclude Include="Mainloop\Process.h" />
+    <ClInclude Include="Mainloop\ProcessManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="engineInitialization.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="engineInitialization.aps" />
   </ItemGroup>
 </Project>

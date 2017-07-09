@@ -146,8 +146,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseGameCode\BaseGameCode.cpp" />
+    <ClCompile Include="BaseGameCode\BaseGameCode4.cpp" />
+    <ClCompile Include="BaseGameCode\BaseGameLogic.cpp" />
+    <ClCompile Include="GameCodeStd.cpp" />
+    <ClCompile Include="Mainloop\Initialization.cpp" />
+    <ClCompile Include="Mainloop\Process.cpp" />
+    <ClCompile Include="Mainloop\ProcessManager.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseGameCode\BaseGameCode.h" />
+    <ClInclude Include="BaseGameCode\BaseGameLogic.h" />
+    <ClInclude Include="BaseGameCode\interfaces.h" />
+    <ClInclude Include="GameCodeStd.h" />
+    <ClInclude Include="Mainloop\Initialization.h" />
+    <ClInclude Include="Mainloop\Process.h" />
+    <ClInclude Include="Mainloop\ProcessManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="engineInitialization.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="engineInitialization.aps" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
